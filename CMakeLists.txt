@@ -3,6 +3,8 @@ cmake_minimum_required(VERSION 3.15...3.18)
 
 project(QuaZip VERSION 1.4)
 
+include_directories("${PROJECT_SOURCE_DIR}/../build/opencv/3rdparty/zlib")
+
 include(cmake/clone-repo.cmake)
 
 set(QUAZIP_LIB_VERSION ${QuaZip_VERSION})
